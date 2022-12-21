@@ -1,0 +1,16 @@
+import cv2
+import numpy as np
+
+
+leftside=cv2.imread('left.jpg',cv2.IMREAD_COLOR)
+rightside=cv2.imread('right.jpg',cv2.IMREAD_COLOR)
+
+
+images=[]
+images.append(left)
+images.append(right)
+
+stitcher= cv2.stitcher.create()
+a,b= stitcher.stitch(images)
+
+
